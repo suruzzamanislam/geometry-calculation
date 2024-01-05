@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry Calculation</title>
+
+  <!-- tailwind and daisy ui lick -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <h1 class="text-5xl text-orange-400 text-center font-bold mt-5">Geometry Calculation</h1>
+
+  <div class="w-11/12 gap-x-5 flex justify-between mx-auto mt-16">
+    <div class="flex gap-x-5 justify-between items-center flex-1">
+      <!-- Triangel -->
+      <div class="card h-[535px] flex-1 bg-base-100 drop-shadow-xl border border-gray-400">
+        <figure class="px-10 pt-10">
+          <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Triangel</h2>
+          <p class="text-xl">Area (A) = 0.5 X b X h</p>
+          <div class="flex gap-x-4 mt-4 justify-between items-center">
+            <input id="b" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="b"
+              type="number"><span class="text-lg">cm</span>
+            <input id="h" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="h"
+              type="number"><span class="text-lg">cm</span>
+          </div>
+          <h2 class="text-xl">Area: <span id="trianglee">0</span> cm<sup>2</sup></h2>
+          <div class=" w-full">
+            <button id="triangle-btn" class="btn w-full mt-3 btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Rectangle -->
+      <div class="card h-[535px] flex-1 bg-base-100 drop-shadow-xl border border-gray-400">
+        <figure class="px-10 pt-10">
+          <img src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Rectangel</h2>
+          <p class="text-xl">Area (A) = w X l</p>
+          <div class="flex gap-x-4 mt-4 justify-between items-center">
+            <input id="w" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="w"
+              type="number"><span class="text-lg">cm</span>
+            <input id="l" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="l"
+              type="number"><span class="text-lg">cm</span>
+          </div>
+          <h2 class="text-xl">Area: <span id="rectangle">0</span> cm<sup>2</sup></h2>
+          <div class=" w-full">
+            <button id="rectangle-btn" class="btn w-full mt-3 btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+      <!-- Parallelogram -->
+      <div class="card h-[535px] flex-1 bg-base-100 drop-shadow-xl border border-gray-400">
+        <figure class="px-10 pt-10">
+          <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Parallelogram</h2>
+          <p class="text-xl">Area (A) = b X h</p>
+          <div class="flex gap-x-4 mt-4 justify-between items-center">
+            <input id="bp" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="b"
+              type="number"><span class="text-lg">cm</span>
+            <input id="hp" class="w-20 text-black px-2 py-1 bg-gray-100 border border-purple-600" placeholder="h"
+              type="number"><span class="text-lg">cm</span>
+          </div>
+          <h2 class="text-xl">Area: <span id="parallelogram">0</span> cm<sup>2</sup></h2>
+          <div class=" w-full">
+            <button id="parallelogram-btn" class="btn w-full mt-3 btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Area Calculation -->
+    <div id="area-entry" class=" border rounded-2xl  border-gray-400 p-4">
+      <h2 class="text-2xl text-center font-bold">Area Calculation</h2>
+    </div>
+  </div>
+
+  <script src="utlities.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
